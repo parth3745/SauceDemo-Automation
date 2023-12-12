@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
-public class Saucedemo {
+public class Saucedemo{
 
     WebDriver driver;
     ChromeOptions op;
