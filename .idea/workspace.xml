@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49443304-e8a9-437b-afd0-fd1be43dce11" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/loginScreen1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/loginScreen1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Saucedemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Saucedemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Runner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LogInTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,24 +27,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2Z1lW4omMlSemXMLEiWm6ovlOlE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Parth/IdeaProjects/Practice&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Users/Parth/IdeaProjects/Practice/Runner.xml.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/parth/IdeaProjects/SauceDemo-Automation",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.C:/Users/Parth/IdeaProjects/Practice/Runner.xml">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -67,6 +78,14 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-249ae16d76d6-98297cd8" />
+        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-93b19daf" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

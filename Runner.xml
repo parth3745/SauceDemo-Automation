@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Practice Suite">
-    <test name="Saucedemo">
-        <parameter name="itemName1" value="Sauce Labs Bolt T-Shirt"></parameter>
-        <parameter name="itemName2" value="Test.allTheThings() T-Shirt (Red)"></parameter>
+    <test name="Login Test">
         <classes>
-            <class name="Saucedemo"/>
+            <class name="LoginTest.LoginTest"></class>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
