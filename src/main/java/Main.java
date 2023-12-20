@@ -10,15 +10,18 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        Set<String> s1 = new HashSet<String>();
-        s1.add("one");
-        s1.add("two");
-        s1.add("one");
-        Set<String> s2 = new HashSet<String>();
-        s2.add("one");
-        s2.add("two");
-        s2.add("one");
-        System.out.println(s1);
+        int c = 10;
+        Object[][] objArr = new Object[3][2];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 2; j++) {
+                objArr[i][j] = new Object[]{i, j};
+            }
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 2; j++) {
+
+            }
+        }
         System.exit(0);
     }
 }
