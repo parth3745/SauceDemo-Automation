@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 public class Initializer {
@@ -32,6 +33,7 @@ public class Initializer {
 
     public void launchApp() {
         driver.navigate().to(prop.getProperty("appURL"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
     }
 
     public WebDriver getDriver() {
