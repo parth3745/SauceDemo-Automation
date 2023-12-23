@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49443304-e8a9-437b-afd0-fd1be43dce11" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Runner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test-data/logInCredentials.json" beforeDir="false" afterPath="$PROJECT_DIR$/Test-data/logInCredentials.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Saucedemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/UtilityMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/Initializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestListeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestListeners/Listener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/Parth/IdeaProjects/Practice/Runner.xml.executor": "Run",
+    "TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml.executor": "Run",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/parth/IdeaProjects/SauceDemo-Automation",
@@ -56,7 +61,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.C:/Users/Parth/IdeaProjects/Practice/Runner.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SauceDemo" />
@@ -64,19 +69,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Parth/IdeaProjects/Practice/Runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemo" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Runner.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter2" />
+      </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Parth/IdeaProjects/Practice/Runner.xml" />
+        <item itemvalue="TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -99,5 +119,10 @@
       <updated>1701597494927</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
 </project>
