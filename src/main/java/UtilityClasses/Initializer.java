@@ -3,6 +3,7 @@ package UtilityClasses;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileReader;
@@ -20,7 +21,9 @@ public class Initializer {
 
         if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless=new");
+            driver = new ChromeDriver(options);
             this.driver = driver;
         }
         else if(prop.getProperty("browser").equalsIgnoreCase("firefox")) {
@@ -31,8 +34,11 @@ public class Initializer {
     }
 
     public void launchApp() {
-        driver.navigate().to(prop.getProperty("appURL"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+    }
+
+    public void goToHomePage() {
+        driver.navigate().to(prop.getProperty("appURL"));
     }
 
     public WebDriver getDriver() {

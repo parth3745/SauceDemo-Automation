@@ -6,16 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="49443304-e8a9-437b-afd0-fd1be43dce11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Runner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test-data/logInCredentials.json" beforeDir="false" afterPath="$PROJECT_DIR$/Test-data/logInCredentials.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Saucedemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/UtilityMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/Initializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestListeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestListeners/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +53,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RunManager" selected="TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml">

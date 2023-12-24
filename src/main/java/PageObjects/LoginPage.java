@@ -37,6 +37,10 @@ public class LoginPage extends UtilityMethods {
         return msg;
     }
 
+    public void closeWindow() {
+        driver.close();
+    }
+
     @FindBy(id = "user-name")
     private WebElement usernameInput;
 
