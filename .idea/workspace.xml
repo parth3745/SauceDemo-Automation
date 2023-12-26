@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="49443304-e8a9-437b-afd0-fd1be43dce11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Runner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ProductsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/Initializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +48,17 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/Parth/IdeaProjects/Practice/Runner.xml.executor": "Run",
     "TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml.executor": "Run",
+    "TestNG.addToCartTest.executor": "Run",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/parth/IdeaProjects/SauceDemo-Automation",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml">
+  <component name="RunManager" selected="TestNG.addToCartTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SauceDemo" />
@@ -78,19 +80,36 @@
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners>
-        <listener class="org.testng.reporters.EmailableReporter2" />
-      </listeners>
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="addToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProductsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProductsTests" />
+      <option name="MAIN_CLASS_NAME" value="ProductsTests.addToCartTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="TestNG.addToCartTest" />
       <item itemvalue="TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.addToCartTest" />
         <item itemvalue="TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml" />
         <item itemvalue="Application.Main" />
       </list>

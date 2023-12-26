@@ -44,46 +44,18 @@ public class LoginTest {
 
     @Test(dataProvider = "credentials")
     public void performLogin(String username, String password) {
-//        init.goToHomePage();
-//        LoginPage loginPage = new LoginPage(driver);
-//        String message = loginPage.perFormLogIn(username.substring(1, username.length() - 1), password.substring(1, password.length() - 1));
-//        if (username.contains("locked_out_user")) {
-//            Assert.assertEquals(message, "Epic sadface: Sorry, this user has been locked out.");
-//        }
-//        else if(username.contains("nonExistingUser")) {
-//            Assert.assertEquals(message, "Epic sadface: Username and password do not match any user in this service");
-//        }
-//        init.goToHomePage();
-    }
-
-    @Test(dataProvider = "credentials")
-    public void productsInfoVerificationTest(String username, String password) throws IOException {
-        SoftAssert softAssert = new SoftAssert();
         init.goToHomePage();
-        if (username.contains("locked_out_user") || username.contains("nonExistingUser")) {
-            ;
+        LoginPage loginPage = new LoginPage(driver);
+        String message = loginPage.perFormLogIn(username.substring(1, username.length() - 1), password.substring(1, password.length() - 1));
+        if (username.contains("locked_out_user")) {
+            Assert.assertEquals(message, "Epic sadface: Sorry, this user has been locked out.");
         }
-        else {
-            LoginPage loginPage = new LoginPage(driver);
-            loginPage.perFormLogIn(username.substring(1, username.length() - 1), password.substring(1, password.length() - 1));
-            ProductsPage productsPage = new ProductsPage(driver);
-            String expectedJsonString = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "/Test-data/products.json"));
-            JsonElement e = (new JsonParser()).parse(expectedJsonString);
-            JsonArray expectedArray = e.getAsJsonArray();
-            JsonArray actualArray = productsPage.getProductsInfo();
-            for (int i = 0; i < expectedArray.size(); i++) {
-                softAssert.assertEquals(actualArray.get(i).getAsJsonObject().get("product_name"), expectedArray.get(i).getAsJsonObject().get("product_name"));
-                softAssert.assertEquals(actualArray.get(i).getAsJsonObject().get("product_desc"), expectedArray.get(i).getAsJsonObject().get("product_desc"));
-                softAssert.assertEquals(actualArray.get(i).getAsJsonObject().get("product_price"), expectedArray.get(i).getAsJsonObject().get("product_price"));
-
-                System.out.println("Actual: " + actualArray.get(i).getAsJsonObject().get("product_name") + " | Expected: " + expectedArray.get(i).getAsJsonObject().get("product_name"));
-                System.out.println("Actual: " + actualArray.get(i).getAsJsonObject().get("product_desc") + " | Expected: " + expectedArray.get(i).getAsJsonObject().get("product_desc"));
-                System.out.println("Actual: " + actualArray.get(i).getAsJsonObject().get("product_price") + " | Expected: " + expectedArray.get(i).getAsJsonObject().get("product_price"));
-            }
+        else if(username.contains("nonExistingUser")) {
+            Assert.assertEquals(message, "Epic sadface: Username and password do not match any user in this service");
         }
-        softAssert.assertAll();
         init.goToHomePage();
     }
+
     @AfterClass
     public void closure() {
         driver.close();

@@ -22,7 +22,7 @@ public class Initializer {
         if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless=new");
+//            options.addArguments("--headless=new");
             driver = new ChromeDriver(options);
             this.driver = driver;
         }

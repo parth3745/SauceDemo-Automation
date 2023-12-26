@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Practice Suite">
+<suite name="Practice Suite" parallel="tests" thread-count="2">
     <listeners>
         <listener class-name="TestListeners.Listener"></listener>
     </listeners>
@@ -9,4 +9,9 @@
             <class name="LoginTest.LoginTest"></class>
         </classes>
     </test> <!-- Test -->
+    <test name="Products Information Test">
+        <classes>
+            <class name="ProductsTests.ProductInfoVerify"></class>
+        </classes>
+    </test>
 </suite> <!-- Suite -->

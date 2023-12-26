@@ -39,6 +39,14 @@ public class ProductsPage {
         return actualArray;
     }
 
+    public void addProductToCart(String prodTitle) {
+        for (WebElement e: prodCards) {
+            if (e.findElement(By.className("inventory_item_name")).getText().equalsIgnoreCase(prodTitle)) {
+                e.findElement(By.tagName("button")).click();
+            }
+        }
+    }
+    
     @FindAll({@FindBy(className = "inventory_item_name")})
     private List<WebElement> prodTitles;
 
@@ -47,4 +55,7 @@ public class ProductsPage {
 
     @FindAll({@FindBy(className = "inventory_item_price")})
     private List<WebElement> prodPrices;
+
+    @FindAll({@FindBy(className = "inventory_item_description")})
+    private List<WebElement> prodCards;
 }
