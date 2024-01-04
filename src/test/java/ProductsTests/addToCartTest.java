@@ -5,6 +5,7 @@ import PageObjects.ProductsPage;
 import UtilityClasses.Initializer;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -13,6 +14,10 @@ public class addToCartTest {
 
     WebDriver driver;
     Initializer init;
+
+//    @DataProvider(name = "productsToOrder") {
+//
+//    }
 
     @BeforeClass
     public void initialize() throws IOException {
