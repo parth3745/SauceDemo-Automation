@@ -20,7 +20,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class ProductInfoVerify {
+public class ProductInfoTest {
     WebDriver driver;
     Initializer init;
 
@@ -75,6 +75,6 @@ public class ProductInfoVerify {
 
     @AfterClass
     public void closure() {
-//        driver.close();
+        driver.close();
     }
 }

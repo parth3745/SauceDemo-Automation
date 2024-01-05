@@ -9,6 +9,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -49,5 +50,10 @@ public class addToCartTest {
     @Test(dataProvider = "productsToOrder")
     public void cartTest(String p) {
         productsPage.addProductToCart(p);
+    }
+
+    @AfterClass
+    public void closure() {
+        driver.close();
     }
 }

@@ -11,7 +11,7 @@
     </test> <!-- Test -->
     <test name="Product and cart tests">
         <classes>
-            <class name="ProductsTests.ProductInfoVerify"></class>
+            <class name="ProductsTests.ProductInfoTest"></class>
             <class name="ProductsTests.addToCartTest"></class>
         </classes>
     </test>
