@@ -64,9 +64,9 @@ public class ProductInfoVerify {
                 softAssert.assertEquals(actualArray.get(i).getAsJsonObject().get("product_desc"), expectedArray.get(i).getAsJsonObject().get("product_desc"));
                 softAssert.assertEquals(actualArray.get(i).getAsJsonObject().get("product_price"), expectedArray.get(i).getAsJsonObject().get("product_price"));
 
-                System.out.println("Actual: " + actualArray.get(i).getAsJsonObject().get("product_name") + " | Expected: " + expectedArray.get(i).getAsJsonObject().get("product_name"));
-                System.out.println("Actual: " + actualArray.get(i).getAsJsonObject().get("product_desc") + " | Expected: " + expectedArray.get(i).getAsJsonObject().get("product_desc"));
-                System.out.println("Actual: " + actualArray.get(i).getAsJsonObject().get("product_price") + " | Expected: " + expectedArray.get(i).getAsJsonObject().get("product_price"));
+//                System.out.println("Actual: " + actualArray.get(i).getAsJsonObject().get("product_name") + " | Expected: " + expectedArray.get(i).getAsJsonObject().get("product_name"));
+//                System.out.println("Actual: " + actualArray.get(i).getAsJsonObject().get("product_desc") + " | Expected: " + expectedArray.get(i).getAsJsonObject().get("product_desc"));
+//                System.out.println("Actual: " + actualArray.get(i).getAsJsonObject().get("product_price") + " | Expected: " + expectedArray.get(i).getAsJsonObject().get("product_price"));
             }
         }
         softAssert.assertAll();
