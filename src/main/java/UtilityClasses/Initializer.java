@@ -41,6 +41,7 @@ public class Initializer {
         }
         else {
             if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
+                System.out.println("Running on chrome...");
                 WebDriverManager.chromedriver().setup();
 //            ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--headless=new");
@@ -48,11 +49,13 @@ public class Initializer {
                 this.driver = driver;
             }
             else if(System.getProperty("browser").equalsIgnoreCase("firefox")) {
+                System.out.println("Running on firefox...");
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 this.driver = driver;
             }
             else if(System.getProperty("browser").equalsIgnoreCase("edge")) {
+                System.out.println("Running on edge...");
                 WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
                 this.driver = driver;
