@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="49443304-e8a9-437b-afd0-fd1be43dce11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/Initializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductsTests/ProductInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductsTests/ProductInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductsTests/addToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductsTests/addToCartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -69,6 +69,7 @@ public class Initializer {
     }
 
     public WebDriver getDriver() {
+        System.out.println("Driver returned.");
         return driver;
     }
 }
