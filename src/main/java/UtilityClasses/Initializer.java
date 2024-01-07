@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileReader;
@@ -19,17 +20,43 @@ public class Initializer {
         prop = new Properties();
         prop.load(new FileReader(System.getProperty("user.dir") + "/Configuration.properties"));
 
-        if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
-            WebDriverManager.chromedriver().setup();
-            ChromeOptions options = new ChromeOptions();
+        if (System.getProperty("browser") == null) {
+            if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
+                WebDriverManager.chromedriver().setup();
+//            ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--headless=new");
-            driver = new ChromeDriver(options);
-            this.driver = driver;
+                driver = new ChromeDriver();
+                this.driver = driver;
+            }
+            else if(prop.getProperty("browser").equalsIgnoreCase("firefox")) {
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+                this.driver = driver;
+            }
+            else if(prop.getProperty("browser").equalsIgnoreCase("edge")) {
+                WebDriverManager.edgedriver().setup();
+                driver = new EdgeDriver();
+                this.driver = driver;
+            }
         }
-        else if(prop.getProperty("browser").equalsIgnoreCase("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-            this.driver = driver;
+        else {
+            if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
+                WebDriverManager.chromedriver().setup();
+//            ChromeOptions options = new ChromeOptions();
+//            options.addArguments("--headless=new");
+                driver = new ChromeDriver();
+                this.driver = driver;
+            }
+            else if(System.getProperty("browser").equalsIgnoreCase("firefox")) {
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+                this.driver = driver;
+            }
+            else if(System.getProperty("browser").equalsIgnoreCase("edge")) {
+                WebDriverManager.edgedriver().setup();
+                driver = new EdgeDriver();
+                this.driver = driver;
+            }
         }
     }
 

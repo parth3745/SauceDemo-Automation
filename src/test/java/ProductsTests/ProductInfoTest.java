@@ -1,7 +1,7 @@
 package ProductsTests;
 
-import PageObjects.LoginPage;
-import PageObjects.ProductsPage;
+import Pages.LoginPage;
+import Pages.ProductsPage;
 import UtilityClasses.Initializer;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -74,7 +74,8 @@ public class ProductInfoTest {
     }
 
     @AfterClass
-    public void closure() {
+    public void closure() throws InterruptedException {
+        Thread.sleep(500);
         driver.close();
     }
 }

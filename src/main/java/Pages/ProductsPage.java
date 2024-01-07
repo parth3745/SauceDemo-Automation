@@ -1,4 +1,4 @@
-package PageObjects;
+package Pages;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

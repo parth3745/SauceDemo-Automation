@@ -1,11 +1,10 @@
 package ProductsTests;
 
-import PageObjects.LoginPage;
-import PageObjects.ProductsPage;
+import Pages.LoginPage;
+import Pages.ProductsPage;
 import UtilityClasses.Initializer;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
@@ -53,7 +52,8 @@ public class addToCartTest {
     }
 
     @AfterClass
-    public void closure() {
+    public void closure() throws InterruptedException {
+        Thread.sleep(500);
         driver.close();
     }
 }

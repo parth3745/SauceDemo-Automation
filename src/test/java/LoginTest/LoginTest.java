@@ -1,21 +1,15 @@
 package LoginTest;
 
-import PageObjects.LoginPage;
-import PageObjects.ProductsPage;
+import Pages.LoginPage;
 import com.google.gson.*;
 import com.google.gson.stream.JsonReader;
-import lombok.extern.java.Log;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import UtilityClasses.Initializer;
-import org.testng.asserts.SoftAssert;
 
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
 
 public class LoginTest {
 
@@ -57,7 +51,8 @@ public class LoginTest {
     }
 
     @AfterClass
-    public void closure() {
+    public void closure() throws InterruptedException {
+        Thread.sleep(500);
         driver.close();
     }
 }
