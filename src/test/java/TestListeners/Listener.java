@@ -6,9 +6,11 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listener extends UtilityMethods implements ITestListener {
+public class Listener implements ITestListener {
+
+    public UtilityMethods methods;
     public Listener(WebDriver driver) {
-        super(driver);
+        methods = new UtilityMethods(driver);
     }
 
     @Override
