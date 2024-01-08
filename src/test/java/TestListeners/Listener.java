@@ -1,10 +1,16 @@
 package TestListeners;
 
+import UtilityClasses.UtilityMethods;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listener implements ITestListener {
+public class Listener extends UtilityMethods implements ITestListener {
+    public Listener(WebDriver driver) {
+        super(driver);
+    }
+
     @Override
     public void onTestStart(ITestResult result) {
 // TODO Auto-generated method stub
@@ -12,6 +18,7 @@ public class Listener implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult result) {
+        System.out.println("Name: " + result.getName());
 // TODO Auto-generated method stub
     }
 
