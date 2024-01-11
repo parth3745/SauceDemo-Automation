@@ -8,11 +8,6 @@ import org.testng.ITestResult;
 
 public class Listener implements ITestListener {
 
-    public UtilityMethods methods;
-    public Listener(WebDriver driver) {
-        methods = new UtilityMethods(driver);
-    }
-
     @Override
     public void onTestStart(ITestResult result) {
 // TODO Auto-generated method stub
