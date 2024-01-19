@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="49443304-e8a9-437b-afd0-fd1be43dce11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestListeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestListeners/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductsTests/ProductInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductsTests/ProductInfoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,7 +57,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SauceDemo" />
@@ -105,8 +108,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.C:/Users/parth/IdeaProjects/SauceDemo-Automation/Runner.xml" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.addToCartTest" />
       </list>
     </recent_temporary>
@@ -133,5 +136,16 @@
     <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
     <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
     <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

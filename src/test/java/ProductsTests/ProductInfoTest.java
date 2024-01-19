@@ -10,10 +10,7 @@ import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 import java.io.File;
