@@ -1,3 +1,14 @@
 [
-  "Sauce Labs Bolt T-Shirt", "Test.allTheThings() T-Shirt (Red)", "Sauce Labs Bike Light"
+  {
+    "title": "Sauce Labs Bolt T-Shirt",
+    "price": 15.99
+  },
+  {
+    "title": "Test.allTheThings() T-Shirt (Red)",
+    "price": 15.99
+  },
+  {
+    "title": "Sauce Labs Bike Light",
+    "price": 9.99
+  }
 ]

@@ -18,6 +18,11 @@ public class CartPage extends UtilityMethods {
         PageFactory.initElements(driver, this);
     }
 
+    //Go back to products page
+    public void goToProductsPage() {
+        continueShoppingButton.click();
+    }
+
     @FindAll({@FindBy(className = "cart_item")})
     private List<WebElement> cartItems;
 
@@ -26,5 +31,8 @@ public class CartPage extends UtilityMethods {
 
     @FindBy(id = "checkout")
     private WebElement checkoutButton;
+
+    @FindBy(className = "shopping_cart_link")
+    private WebElement cartButton;
 
 }

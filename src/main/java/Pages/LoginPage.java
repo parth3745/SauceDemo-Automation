@@ -35,6 +35,15 @@ public class LoginPage extends UtilityMethods {
         return msg;
     }
 
+    public void performLogIn() {
+        driver.navigate().to("https://saucedemo.com");
+        usernameInput.clear();
+        passwordInput.clear();
+        usernameInput.sendKeys("standard_user");
+        passwordInput.sendKeys("secret_sauce");
+        loginSubmitBtn.click();
+    }
+
     public void closeWindow() {
         driver.close();
     }

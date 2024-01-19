@@ -12,7 +12,7 @@
     <test name="Product and cart tests">
         <classes>
             <class name="ProductsTests.ProductInfoTest"></class>
-            <class name="ProductsTests.addToCartTest"></class>
+            <class name="ProductsTests.CartTests"></class>
         </classes>
     </test>
 </suite> <!-- Suite -->

@@ -46,6 +46,10 @@ public class ProductsPage {
             }
         }
     }
+
+    public void goToCartPage() {
+        cartButton.click();
+    }
     
     @FindAll({@FindBy(className = "inventory_item_name")})
     private List<WebElement> prodTitles;
@@ -58,4 +62,7 @@ public class ProductsPage {
 
     @FindAll({@FindBy(className = "inventory_item_description")})
     private List<WebElement> prodCards;
+
+    @FindBy(className = "shopping_cart_link")
+    private WebElement cartButton;
 }
