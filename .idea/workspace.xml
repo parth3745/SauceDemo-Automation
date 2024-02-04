@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="49443304-e8a9-437b-afd0-fd1be43dce11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/UtilityMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/UtilityMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductsTests/CartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductsTests/CartTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestListeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestListeners/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test-data/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/Test-data/products.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
