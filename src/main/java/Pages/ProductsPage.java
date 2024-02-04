@@ -1,5 +1,6 @@
 package Pages;
 
+import UtilityClasses.UtilityMethods;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import org.openqa.selenium.By;
@@ -11,10 +12,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class ProductsPage {
+public class ProductsPage extends UtilityMethods {
     WebDriver driver;
 
     public ProductsPage(WebDriver driver) {
+        super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -47,6 +49,24 @@ public class ProductsPage {
         }
     }
 
+    public void removeProductFromCart(String prodTitle) {
+        for (WebElement e: prodCards) {
+            if (e.findElement(By.className("inventory_item_name")).getText().equalsIgnoreCase(prodTitle)) {
+                e.findElement(By.tagName("button")).click();
+            }
+        }
+    }
+
+    public int getBadgeCount() throws InterruptedException {
+        Thread.sleep(500);
+        try {
+                return Integer.parseInt(cartBadge.getText());
+        }
+        catch (Exception e) {
+            return 0;
+        }
+    }
+
     public void goToCartPage() {
         cartButton.click();
     }
@@ -65,4 +85,7 @@ public class ProductsPage {
 
     @FindBy(className = "shopping_cart_link")
     private WebElement cartButton;
+
+    @FindBy(className = "shopping_cart_badge")
+    private WebElement cartBadge;
 }

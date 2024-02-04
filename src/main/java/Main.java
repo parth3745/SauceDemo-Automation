@@ -1,3 +1,5 @@
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -11,20 +13,15 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
-
-    public int countOnes(String s) {
-        int count = 0;
-        char arr[] = s.toCharArray();
-        for(int i = 0; i < s.length(); i++) {
-            if(arr[i] == '1') {
-                count++;
-            }
-        }
-        return count;
-    }
     public static void main(String[] args) throws IOException {
-        int[] arr = new int[]{10, 15, 20};
-        System.out.println(arr.length);
+        ExtentSparkReporter reporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/index.html");
+        reporter.config().setReportName("SauceDemo Automation Test Results");
+        reporter.config().setDocumentTitle("SauceDemo Test Results");
+        ExtentReports extent = new ExtentReports();
+        extent.attachReporter(reporter);
+        extent.setSystemInfo("Tester", "Parth Sharma");
+        extent.createTest("demo");
+        extent.flush();
         System.exit(0);
     }
 }

@@ -6,11 +6,10 @@ import Pages.ProductsPage;
 import UtilityClasses.Initializer;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.json.Json;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -55,20 +54,35 @@ public class CartTests {
         return items;
     }
 
-    @Test(dataProvider = "itemsToOrder")
-    public void addItems(String name) {
-        productsPage.addProductToCart(name.substring(1, name.length()-1));
+    @Test(priority = 1, dataProvider = "itemsToOrder")
+    public void addItems(String title) {
+        productsPage.addProductToCart(title.substring(1, title.length() - 1));
     }
 
-    @Test()
-    public void removeAllItemsTest() {
-        System.out.println("All removed.");
+    @Test(priority = 2)
+    public void cartBadgeCountCheck() throws InterruptedException {
+        Assert.assertEquals(productsPage.getBadgeCount(), cartItems);
+    }
+
+    @Test(priority = 3, dataProvider = "itemsToOrder")
+    public void removeItems(String title) {
+        productsPage.removeProductFromCart(title.substring(1, title.length() - 1));
+    }
+
+    @Test(priority = 4)
+    public void emptyCartBadgeCountCheck() throws InterruptedException {
+        Assert.assertEquals(productsPage.getBadgeCount(), 0);
+    }
+
+    @Test(priority = 5, dataProvider = "itemsToOrder")
+    public void addItemsAgain(String title) {
+        productsPage.addProductToCart(title.substring(1, title.length() - 1));
     }
 
     @AfterClass()
     public void closure() throws InterruptedException {
+        productsPage.goToCartPage();
         Thread.sleep(500);
         driver.close();
     }
-
 }
